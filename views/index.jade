@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  a(href='/register') Registrarse
+  table 
+    thead 
+      tr 
+        th Name
+        th Email
+    tbody 
+      each user in data
+        tr
+          th= user.name
+          th= user.email 
+
+

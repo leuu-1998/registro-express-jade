@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form(action='/register' name="add-user" method="post")
+    div.input
+            span.label Nombre
+            input(type="text", name="name")
+    div.input
+            span.label Email 
+            input(type="text", name="email")
+    div.input
+            span.label Contraseña
+            input(type="text", name="password")
+    div.actions
+            input(type="submit", value="Registrarse" )
