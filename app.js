@@ -13,7 +13,7 @@ var app = express();
 
 // Connection to mongo
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost:27017/registro",
+  process.env.MONGODB_URL || "mongodb://localhost:27017/registro",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
