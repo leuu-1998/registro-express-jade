@@ -2,14 +2,14 @@ extends layout
 
 block content
   form(action='/register' name="add-user" method="post")
-    div.input
+    div.input(id="name")
             span.label Nombre
-            input(type="text", name="name",id="name")
-    div.input
+            input(type="text", name="name")
+    div.input(id="email")
             span.label Email 
-            input(type="text", name="email",id="email")
-    div.input
+            input(type="text", name="email")
+    div.input(id="password")
             span.label Contraseña
-            input(type="text", name="password",id="password")
+            input(type="text", name="password")
     div.actions
             input(type="submit", value="Registrarse" )
