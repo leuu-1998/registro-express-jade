@@ -11,5 +11,5 @@ const userSchema = new Schema({
   },
 });
 
-var User = model("User", userSchema);
-module.exports = User;
+var Visitor = model("Visitor", userSchema);
+module.exports = Visitor;
